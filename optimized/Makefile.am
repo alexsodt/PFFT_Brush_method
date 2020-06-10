@@ -5,7 +5,7 @@ EMAIL = alexander.sodt@nih.gov
 bin_PROGRAMS = betaHist.opt betaPostProcess.opt fast_dg.opt histCollect.opt genScatteringLengths.opt bestFitScaling.opt deuterate.opt
 
 AM_CPPFLAGS = -include ../config.h $(AM_INCLUDE) 
-AM_CFLAGS = -O2
+AM_CFLAGS = -O2 -std=gnu11
 AM_CXXFLAGS = -O2
 
 SRC_DIR = ../src
